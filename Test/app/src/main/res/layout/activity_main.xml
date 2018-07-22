@@ -3,31 +3,21 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/a"
-        android:layout_width="100dp"
+    <EditText
+
+
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:layout_centerInParent="true"
-        android:text="ID: A"
-        android:textColor="#ffffff"
-        android:gravity="center"
-        android:background="@android:color/holo_red_light" />
+        android:gravity="center_vertical"
+        android:background="#ffff0f"
+        android:inputType="textCapSentences|textAutoCorrect" />
 
-    <TextView
-        android:layout_toLeftOf="@+id/a"
-        android:id="@+id/b"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_centerInParent="true"
-        android:text="ID: B"
-        android:textColor="#ffffff"
-        android:textSize="17dp"
-        android:gravity="center"
-        android:background="@android:color/black" />
-
-
-
-
-
+    <EditText
+        android:layout_toEndOf="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:background="#ff01ff" />
 
 </RelativeLayout>
