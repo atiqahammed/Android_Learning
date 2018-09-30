@@ -47,12 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 month = calendar.get(Calendar.MONTH);
                 date = calendar.get(Calendar.DATE);
 
-                Date date = Calendar.getInstance().getTime();
-                SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
-                String formattedDate = df.format(date);
 
-                String[] array = formattedDate.split("-");
-                Toast.makeText(MainActivity.this, formattedDate, Toast.LENGTH_SHORT);
+
+
 
                 //Toast.makeText(MainActivity.this," "+array[0]+" " + array[1] +" "+ array[2], Toast.LENGTH_SHORT);
 
@@ -65,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker datePicker, int year, int month, int date) {
-                                Toast.makeText(MainActivity.this, "hello ok ", Toast.LENGTH_SHORT);
+                                Toast.makeText(MainActivity.this, date+ " / " + month +" / " + year, Toast.LENGTH_SHORT).show();
                             }
-                        }, 0, 0, 0);
+                        }, year, month, date);
                 datePickerDialog.show();
             }
         });
