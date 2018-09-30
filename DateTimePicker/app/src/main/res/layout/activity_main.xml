@@ -8,14 +8,14 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:background="@android:color/darker_gray"
         android:bufferType="spannable"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:padding="10dp"
         android:capitalize="words"
+        android:padding="10dp"
         android:text="Select Date" />
 </RelativeLayout>
